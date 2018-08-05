@@ -5,7 +5,6 @@ from pymongo import MongoClient
 import json
 import datetime
 client = MongoClient('127.0.0.1',27017)
-
 db = client.pythonTest
 db_inputs_col = db['input_entries']
 

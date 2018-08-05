@@ -11,6 +11,7 @@ db_inputs_col = db['input_entries']
 
 print("Hello World!")
 
+
 class inputEntry ():
     def __init__(self, inputVal):
         self.inputString = inputVal
@@ -26,6 +27,7 @@ def new_printer (incoming_string):
     print('Printing: '+ entryObj.inputString)
     db_inputs_col.insert_one(entryObj.inputEntryObj())
     return incoming_string
+
 
 new_printer(cmd_line_input)
 #lambda cmd_line_input, new_printer  : new_printer(cmd_line_input)
